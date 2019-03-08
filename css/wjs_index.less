@@ -1,0 +1,104 @@
+// out: wjs_index.css, compress: true, sourceMap: flase
+// 头部样式
+@baseColor:#e92322;
+.wjs_header{
+    height: 50px;
+    line-height: 50px;//垂直居中
+    border-bottom:1px solid #ccc;
+    .row{
+        height: 100%;
+        text-align: center;
+        > div:nth-of-type(-n+3){
+            border-right:1px solid #ccc;
+            > .wjs_code{
+                position: relative;
+                //a标签为行内元素
+                display: block;
+                >img{
+                    display: none;
+                    position: absolute;
+                    top:49px;
+                    left:50%;
+                    transform: translateX(-50%);
+                    border:1px solid #ccc;
+                    border-top:none;
+                    
+                }
+                &:hover{
+                    > img{
+                        display: block;
+                    }
+                }
+            }
+        }
+        >div:nth-last-of-type(1){
+            >.btn_danger{
+                background-color: @baseColor;
+                border-color: @baseColor;
+            }
+            >.btn{
+                padding:3px 15px;
+            }
+            >.btn-link{
+                color:#333;
+                &:hover{
+                    text-decoration: none;
+                }
+            }
+            
+        }
+    }
+}
+// 导航栏样式
+.wjs_nav{
+    .navbar-brand{
+        height:80px;
+        line-height: 50px;
+        > .wjs_icon_text{
+            font-size: 40px;
+        }
+        > span:first-of-type{
+            >img{
+                width:50px;
+                height: 50px;
+                margin-bottom: 20px;
+            }
+        }
+        span::nth-last-of-type{
+            color:@baseColor;
+        }
+    }
+    .navbar-nav {
+        > li{
+            >a{
+                line-height: 50px;
+                font-size:16px;
+            }
+            > a,a:hover,a:focus{
+                color:#777;
+                background-color: transparent;
+                
+            }
+        }
+        .active{
+            > a,a:hover,a:focus{
+                background-color: transparent;
+                border-bottom:3px solid @baseColor;
+            }
+        }
+    }
+    .navbar-toggle{
+        margin-top:23px;
+    }
+}
+
+/*
+轮播图：
+w<768 移动端
+效果：图片会随着屏幕的缩小而缩小
+        设置 img宽度等于百分百%
+w>768 
+    图片作为背景  当屏幕宽度变大时 会显示更多的图片两边的区域
+    background
+    background-position:center center
+*/

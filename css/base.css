@@ -1,0 +1,42 @@
+body{
+    font-family:"Microsoft YaHei",sans-serif;
+    font-size: 14px;
+    color:#333;
+
+}
+a{
+    text-decoration: none;
+    color:#333;
+}
+a:hover{
+    text-decoration: none;
+    color:#333;
+}
+
+/* 左边距 */
+.mar-left{
+    margin-left: 10px;
+}
+/* 右边距 */
+.mar_right{
+    margin-right:10px;
+}
+
+/* 自定义字体 */
+@font-face {
+    font-family: 'Glyphicons Halflings';
+    /* ie9 */
+    src: url('../lib/bootstrap/fonts/glyphicons-halflings-regular.eot');
+    /* ie 6-8 */
+    src: url('../lib/bootstrap/fonts/glyphicons-halflings-regular.eot?#iefix') format('embedded-opentype'),
+    /* chrome firefox */
+     url('../lib/bootstrap/fonts/glyphicons-halflings-regular.woff') format('woff'),
+      /*chrome,firefox,opera safari Android ios4.2+  */
+     url('../lib/bootstrap/fonts/glyphicons-halflings-regular.ttf') format('truetype'), 
+     /* ios 4.1- */
+     url('../lib/bootstrap/fonts/glyphicons-halflings-regular.svg#glyphicons_halflingsregular') format('svg');
+    
+}
+/* 自定义字体使用样式 */
+
+

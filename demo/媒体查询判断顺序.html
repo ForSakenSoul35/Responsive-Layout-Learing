@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- <link rel="stylesheet" type="text/css" media="screen" href="main.css">
+    <script src="main.js"></script> -->
+    <style>
+        /* 
+        当条件是 判断最小的值 min-width 并且从小到大进行判断
+        1.向上兼容：如果设置了宽度更小的样式 默认这些样式也会传递到宽度更大的条件范围内
+        2.向下覆盖：宽度更大的样式会将前面宽度更小的样式覆盖
+         */
+        body{
+            background-color: red;
+        }
+        @media screen and (min-width:769px){
+
+        }
+        /* 书写建议
+            如果是判断最小的值 min-width 应该从小到大进行判断
+            前端框架 用的方式是: 判断最小的值 
+            如果是判断最大的值 max-width 应该从大到小进行判断
+
+         */
+    </style>
+</head>
+<body>
+    <!-- 
+        w<768 red
+        @media screen and (min-width:768px){
+            body{
+                background-color:red;
+            //表示宽度最小为768px的屏幕
+            }
+        }
+        768-992 grenn
+        992-1200 blue
+        w>1200 pink
+     -->
+</body>
+</html>

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- <link rel="stylesheet" type="text/css" media="screen" href="main.css">
+    <script src="main.js"></script> -->
+    <style>
+        body{
+            background-color: red;
+        }
+        @media screen and (min-width:768px){
+            body{
+                background-color: green;
+            }
+        }
+        @media screen and (min-width:992px){
+            body{
+                background-color: blue;
+            }
+        }
+        /* 区分:min-device-width:
+            min-width 在pc端和移动端能正常的响应  指的是当前可视区域的宽度
+            min-device-width:device指的是当前设备的尺寸
+                                改变浏览器的尺寸  当前终端的尺寸不会改变
+            为了移动端和PC端都能更好的响应 建议使用min-width
+            但是如果想要移动端正常响应 而PC端不响应 应使用 min-device-width
+         */
+         /* 
+         通过媒体查询 设置不同的屏幕尺寸调用不同的样式文件
+            <link rel="stylesheet " href="a.css"  media ="screen and (min-width:768px) and (max-width:992px)">
+          */
+        /* 
+            not 表示取反 
+            写法: 注意not的位置 
+            表示除了 屏幕尺寸在768与992之间 
+            @media not screen and (min-width:768px)  and (max-width:992px){
+                background-color:green;
+            }
+        
+         */
+    </style>
+</head>
+<body>
+    
+</body>
+</html>
